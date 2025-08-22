@@ -34,7 +34,7 @@ csv_file = "scores.csv"
 if submitted:
     # Create a new row of data
     new_row = {
-        "Date": datetime.now().strftime("%Y-%m-%d"),
+        ""Date": st.date_input("Match Date", datetime.today()).strftime("%Y-%m-%d"),
         "Player": player_name,
         "Win": match_result,
         "Technique": technique,
